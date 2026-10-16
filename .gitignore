@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# Packaged preview aliases; canonical review captures live in validation/.
+infinite-tv-*.png

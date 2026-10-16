@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#dfd5ca" />
+    <meta name="description" content="原点，只在后退时存在。INFINITE TV / 最后一台电视，一次关于观看、递归与未完成未来的媒介实验。" />
+    <meta name="author" content="马路Milo" />
+    <meta property="og:title" content="INFINITE TV" />
+    <meta property="og:description" content="原点，只在后退时存在。马路Milo的交互式生成艺术作品。" />
+    <meta property="og:type" content="website" />
+    <title>INFINITE TV</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23050505'/%3E%3Crect x='4' y='7' width='24' height='18' rx='4' fill='%23E8E3D9'/%3E%3Crect x='7' y='10' width='15' height='12' rx='3' fill='%23050505'/%3E%3Ccircle cx='25' cy='20' r='1' fill='%239B252B'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <main id="artwork" aria-label="INFINITE TV，无限递归生成艺术" aria-busy="true">
+      <canvas id="scene" role="img" aria-label="屏幕中嵌套着另一台电视，镜头持续缓慢进入。点击暂停或继续，滚轮和上下滑动调速。"></canvas>
+      <p id="loading-note" class="loading-note" role="status">正在接收画面<span lang="en">RECEIVING IMAGE</span></p>
+      <header class="masthead">
+        <h1>INFINITE TV</h1>
+        <div class="edition"><span>最后一台电视</span><a class="author-link" href="https://www.kanshao2077.cn/" target="_blank" rel="noopener noreferrer" aria-label="马路Milo的个人网站，在新标签页打开">@ 马路Milo</a></div>
+        <button id="about" class="about-trigger" type="button" aria-haspopup="dialog" aria-controls="curatorial" aria-expanded="false">关于这次收看 <span aria-hidden="true">↗</span></button>
+      </header>
+      <div class="transmission" aria-label="播放状态">
+        <span class="status-light" aria-hidden="true"></span>
+        <span id="transmission-label">TUNING IN</span>
+      </div>
+      <footer class="caption">
+        <p class="work-title">原点，只在后退时存在。</p>
+        <p class="instructions"><span class="desktop-instruction">SCROLL TO CHANGE SPEED</span><span class="touch-instruction">上下滑动调速</span><span class="instruction-divider">/</span><span class="desktop-instruction">SPACE TO PAUSE · R TO RESET</span><span class="touch-instruction">轻触暂停</span></p>
+      </footer>
+      <div class="transport">
+        <button id="pause" type="button" aria-label="暂停动画" aria-pressed="false"><span id="pause-symbol" aria-hidden="true">Ⅱ</span><span id="pause-label">PAUSE</span></button>
+        <span id="speed" aria-label="播放速度">1.0×</span>
+        <button id="reset" type="button" aria-label="回到第一层">RESET</button>
+      </div>
+      <div class="depth-display" aria-label="当前递归层数">
+        <span class="depth-caption">LAYER</span>
+        <output id="layer">0001</output>
+        <span class="depth-progress" aria-hidden="true"><span id="layer-progress"></span></span>
+      </div>
+      <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+      <p id="fallback" hidden>无法启动 Canvas 2D。请使用支持 Canvas 的浏览器重新打开。</p>
+      <dialog id="curatorial" class="curatorial-dialog" aria-labelledby="curatorial-title">
+        <div class="diary-frame" aria-hidden="true"></div>
+        <button id="close-window" class="window-close" type="button" aria-label="关闭说明"></button>
+        <button id="close-about" class="window-plus-close" type="button" aria-label="关闭窗口，返回观看" title="关闭窗口，返回观看" autofocus></button>
+        <article class="diary-scroll" tabindex="0" aria-label="作品说明，中英双语">
+          <div class="diary-copy">
+            <p class="curatorial-index">1999 — ∞</p>
+            <h2 id="curatorial-title">原点的缺席</h2>
+            <p class="curatorial-english-title" lang="en">THE ABSENCE OF AN ORIGIN</p>
+            <div class="curatorial-deck bilingual-pair">
+              <p>一次关于观看、递归与未完成未来的媒介实验。</p>
+              <p class="translation" lang="en">A media experiment in looking, recursion, and an unfinished future.</p>
+            </div>
+            <div class="curatorial-body">
+              <section class="bilingual-pair">
+                <p>千禧年并未成为过去。它作为一个未被兑现的未来，滞留在媒介内部。天线仍然指向天空，接收的却不再是远方，而是接收这一动作本身。</p>
+                <p class="translation" lang="en">The millennium has never become the past. It remains lodged inside the medium as a future never fulfilled. The antennas still point toward the sky, receiving no longer a distant world, but the act of reception itself.</p>
+              </section>
+              <section class="bilingual-pair">
+                <p>在这间被反复显影的客厅里，屏幕不再充当世界的窗口。它撤销了内外之分：每一个内部，都只是尚未被识别的外部；每一次抵达，都以另一层界面为代价。</p>
+                <p class="translation" lang="en">In this endlessly developing room, the screen ceases to be a window onto the world. It dissolves the distinction between inside and outside: every interior is an exterior not yet recognized; every arrival exacts another interface.</p>
+              </section>
+              <section class="bilingual-pair">
+                <p>观看者以为自己正向原点逼近。原点却只能通过持续后退，维持它作为原点的地位。递归由此成为一种时间政治：未来被允许无限接近，却从不获得发生的时刻。</p>
+                <p class="translation" lang="en">The viewer believes they are approaching an origin. Yet the origin can retain its status only by continually receding. Recursion becomes a politics of time: the future is permitted infinite proximity, but never the moment in which to occur.</p>
+              </section>
+              <section class="bilingual-pair">
+                <p>“最后一台电视”并非藏在序列尽头的某件物。它是观看为自身制造的终止条件——当你停止寻找，终点才被短暂地生产出来。</p>
+                <p class="translation" lang="en">The last television is no object concealed at the end of the sequence. It is a condition of termination that looking invents for itself. Only when you stop searching is an endpoint briefly brought into being.</p>
+              </section>
+            </div>
+            <div class="curatorial-ending bilingual-pair">
+              <p>世界退场之后，观看仍在继续。</p>
+              <p class="translation" lang="en">After the world withdraws, looking continues.</p>
+            </div>
+            <div class="curatorial-colophon bilingual-pair"><p>一则媒介寓言</p><p lang="en">THE ORIGIN IS ALWAYS ELSEWHERE.</p></div>
+          </div>
+        </article>
+      </dialog>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

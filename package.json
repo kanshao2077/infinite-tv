@@ -1,0 +1,16 @@
+{
+  "name": "infinite-tv",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "INFINITE TV / 最后一台电视 — a continuous generative CRT artwork",
+  "engines": { "node": "^22.12.0 || >=24.0.0" },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "check": "tsc --noEmit",
+    "build": "npm run check && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs"
+  },
+  "devDependencies": { "typescript": "7.0.2", "vite": "8.3.4" }
+}

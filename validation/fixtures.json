@@ -1,0 +1,98 @@
+[
+  {
+    "requested": 0.99999,
+    "depth": "0.99999000",
+    "firstLayer": "0",
+    "height": 900,
+    "paused": "true",
+    "speed": "1.00000",
+    "targetSpeed": "1.00000",
+    "time": "8.00000000",
+    "visibleLayers": "10",
+    "width": 1440
+  },
+  {
+    "requested": 1.00001,
+    "depth": "1.00001000",
+    "firstLayer": "0",
+    "height": 900,
+    "paused": "true",
+    "speed": "1.00000",
+    "targetSpeed": "1.00000",
+    "time": "8.00000000",
+    "visibleLayers": "10",
+    "width": 1440
+  },
+  {
+    "requested": 2.903661181494487,
+    "depth": "2.90366118",
+    "firstLayer": "0",
+    "height": 900,
+    "paused": "true",
+    "speed": "1.00000",
+    "targetSpeed": "1.00000",
+    "time": "8.00000000",
+    "visibleLayers": "11",
+    "width": 1440
+  },
+  {
+    "requested": 2.903681181494487,
+    "depth": "2.90368118",
+    "firstLayer": "1",
+    "height": 900,
+    "paused": "true",
+    "speed": "1.00000",
+    "targetSpeed": "1.00000",
+    "time": "8.00000000",
+    "visibleLayers": "10",
+    "width": 1440
+  },
+  {
+    "requested": 6.99999,
+    "depth": "6.99999000",
+    "firstLayer": "5",
+    "height": 900,
+    "paused": "true",
+    "speed": "1.00000",
+    "targetSpeed": "1.00000",
+    "time": "8.00000000",
+    "visibleLayers": "11",
+    "width": 1440
+  },
+  {
+    "requested": 7.00001,
+    "depth": "7.00001000",
+    "firstLayer": "5",
+    "height": 900,
+    "paused": "true",
+    "speed": "1.00000",
+    "targetSpeed": "1.00000",
+    "time": "8.00000000",
+    "visibleLayers": "11",
+    "width": 1440
+  },
+  {
+    "requested": 999999.99999,
+    "depth": "999999.99999000",
+    "firstLayer": "999998",
+    "height": 900,
+    "paused": "true",
+    "speed": "1.00000",
+    "targetSpeed": "1.00000",
+    "time": "8.00000000",
+    "visibleLayers": "11",
+    "width": 1440
+  },
+  {
+    "requested": 1000000.00001,
+    "depth": "1000000.00001000",
+    "firstLayer": "999998",
+    "height": 900,
+    "paused": "true",
+    "speed": "1.00000",
+    "targetSpeed": "1.00000",
+    "time": "8.00000000",
+    "visibleLayers": "11",
+    "width": 1440
+  }
+]
